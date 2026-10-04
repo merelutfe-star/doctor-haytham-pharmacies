@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://doctor-haytham-pharmacies.vercel.app/sitemap.xml
+Sitemap: https://doctor-haytham-pharmacies.vercel.app/image-sitemap.xml
