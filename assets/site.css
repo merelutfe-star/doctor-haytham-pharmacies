@@ -1,0 +1,13 @@
+/* Unified site UI: compact imagery, consistent navigation and mobile layout */
+.site-nav{border-top:1px solid #eef2f7;border-bottom:1px solid #e5eaf1;background:#fff;overflow-x:auto}
+.site-nav-inner{width:min(1100px,94%);margin:auto;display:flex;gap:6px;align-items:center;white-space:nowrap;padding:7px 0}
+.site-nav a{color:#163b72;text-decoration:none;font-weight:700;padding:7px 10px;border-radius:9px}
+.site-nav a:hover{background:#eef5ff}
+.banner{max-height:390px!important;object-fit:cover!important}
+.waimg{max-height:260px!important;object-fit:cover!important}
+@media(max-width:700px){
+ .site-nav-inner{justify-content:flex-start;padding:6px 0}
+ .site-nav a{font-size:.9rem;padding:6px 8px}
+ .banner{max-height:250px!important}
+ .waimg{max-height:190px!important}
+}
