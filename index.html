@@ -15,10 +15,13 @@
     .wrap{width:min(1120px,92%);margin:auto}
     header{background:#fff;border-bottom:1px solid #e8edf4;position:sticky;top:0;z-index:10}
     .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{font-weight:800;font-size:1.2rem;text-decoration:none}
+    .brand-link{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .brand-logo{width:52px;height:52px;object-fit:cover;border-radius:50%}
+    .brand{font-weight:800;font-size:1.1rem}
     .wa{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#167c45;color:#fff;text-decoration:none;font-weight:700}
     main{padding-bottom:50px}
-    .hero{padding:70px 0 45px;background:linear-gradient(180deg,#fff,#eef5ff)}
+    .hero{padding:38px 0 45px;background:linear-gradient(180deg,#fff,#eef5ff)}
+    .hero-banner{display:block;width:100%;height:auto;border-radius:20px;margin:0 0 34px;box-shadow:0 10px 30px rgba(24,45,80,.08)}
     .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
     h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.25;margin:0 0 20px}
     h2{font-size:clamp(1.5rem,3vw,2.2rem);margin-top:0}
@@ -27,36 +30,54 @@
     .primary{background:#163b72;color:#fff;padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:700}
     .secondary{background:#fff;border:1px solid #d8e0eb;padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:700}
     .card{background:#fff;border:1px solid #e5eaf1;border-radius:18px;padding:25px;box-shadow:0 10px 30px rgba(24,45,80,.06)}
+    .whatsapp-banner{display:block;width:100%;height:auto;border-radius:18px;margin-top:28px}
     section{padding:55px 0}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
     .note{background:#fff7e6;border:1px solid #f2d99b;border-radius:14px;padding:18px}
     footer{background:#172033;color:#fff;padding:35px 0}
-    @media(max-width:800px){.hero-grid,.grid{grid-template-columns:1fr}.hero{padding-top:45px}.nav{min-height:64px}}
+    @media(max-width:800px){
+      .hero-grid,.grid{grid-template-columns:1fr}
+      .hero{padding-top:28px}
+      .nav{min-height:64px}
+      .brand-logo{width:44px;height:44px}
+      .brand{font-size:1rem}
+      .wa{padding:9px 12px;font-size:.9rem}
+      .hero-banner{border-radius:14px}
+    }
   </style>
 </head>
 <body>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="/">صيدليات دكتور هيثم</a>
+    <a class="brand-link" href="/" aria-label="الصفحة الرئيسية لصيدليات دكتور هيثم">
+      <img class="brand-logo" src="/assets/images/saaitotak-doctor-haytham-logo.webp" width="1254" height="1254" alt="شعار صيدليات دكتور هيثم" decoding="async">
+      <span class="brand">صيدليات دكتور هيثم</span>
+    </a>
     <a class="wa" href="https://wa.me/966538159747" rel="nofollow">واتساب للاستفسار</a>
   </div>
 </header>
 
 <main>
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p><strong>دليل صحي عربي</strong></p>
-        <h1>حبوب الإجهاض في السعودية</h1>
-        <p class="lead">معلومات عامة ومنظمة حول سايتوتك، سايتوتيك وميفيبريستون، مع التركيز على السلامة والتواصل مع الجهات الصحية والصيدليات المرخصة.</p>
-        <div class="actions">
-          <a class="primary" href="https://wa.me/966538159747" rel="nofollow">تواصل عبر واتساب</a>
-          <a class="secondary" href="#information">اقرئي المعلومات</a>
+    <div class="wrap">
+      <a href="https://wa.me/966538159747" rel="nofollow" aria-label="التواصل مع صيدليات دكتور هيثم عبر واتساب">
+        <img class="hero-banner" src="/assets/images/doctor-haytham-saudi-pharmacies-banner.webp" width="1536" height="1024" alt="صيدليات دكتور هيثم وحبوب الإجهاض في السعودية ودول الخليج" fetchpriority="high" decoding="async">
+      </a>
+
+      <div class="hero-grid">
+        <div>
+          <p><strong>دليل صحي عربي</strong></p>
+          <h1>حبوب الإجهاض في السعودية</h1>
+          <p class="lead">معلومات عامة ومنظمة حول سايتوتك، سايتوتيك وميفيبريستون، مع التركيز على السلامة والتواصل مع الجهات الصحية والصيدليات المرخصة.</p>
+          <div class="actions">
+            <a class="primary" href="https://wa.me/966538159747" rel="nofollow">تواصل عبر واتساب</a>
+            <a class="secondary" href="#information">اقرئي المعلومات</a>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <h2>سايتوتك وسايتوتيك وميفيبريستون</h2>
-        <p>تختلف الأدوية واستخداماتها والاحتياطات المرتبطة بها، لذلك يجب الحصول على التقييم والمشورة من مختص صحي مؤهل والالتزام بالأنظمة المحلية.</p>
+        <div class="card">
+          <h2>سايتوتك وسايتوتيك وميفيبريستون</h2>
+          <p>تختلف الأدوية واستخداماتها والاحتياطات المرتبطة بها، لذلك يجب الحصول على التقييم والمشورة من مختص صحي مؤهل والالتزام بالأنظمة المحلية.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -78,6 +99,10 @@
           <p>معلومات تثقيفية عامة حول الدواء وأهمية التقييم الطبي والمتابعة المناسبة.</p>
         </article>
       </div>
+
+      <a href="https://wa.me/966538159747" rel="nofollow" aria-label="التواصل مع صيدليات دكتور هيثم عبر واتساب">
+        <img class="whatsapp-banner" src="/assets/images/whatsapp-consultation-banner.webp" width="1536" height="1024" alt="التواصل مع صيدليات دكتور هيثم عبر واتساب" loading="lazy" decoding="async">
+      </a>
     </div>
   </section>
 
