@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://merelutfe-star.github.io/sitemap.xml
-Sitemap: https://merelutfe-star.github.io/image-sitemap.xml
+Sitemap: https://merelutfe-star.github.io/doctor-haytham-pharmacies/sitemap.xml
+Sitemap: https://merelutfe-star.github.io/doctor-haytham-pharmacies/image-sitemap.xml
